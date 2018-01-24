@@ -108,7 +108,7 @@ var self = this;
 } } ?>
 
 <?js if (data.returns && returns.length) { ?>
-<h5>Returns:</h5>
+<h5>Возвращаемое значение:</h5>
 <?js if (returns.length > 1) { ?><ul><?js
     returns.forEach(function(r) { ?>
         <li><?js= self.partial('returns.tmpl', r) ?></li>

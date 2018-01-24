@@ -626,14 +626,14 @@ exports.publish = function(taffyData, opts, tutorials) {
     files = find({kind: 'file'});
     packages = find({kind: 'package'});
 
-    generate('Home',
-        packages.concat(
-            [{
-                kind: 'mainpage',
-                readme: opts.readme,
-                longname: (opts.mainpagetitle) ? opts.mainpagetitle : 'Main Page'
-            }]
-        ).concat(files), indexUrl);
+    // generate('Home',
+    //     packages.concat(
+    //         [{
+    //             kind: 'mainpage',
+    //             readme: opts.readme,
+    //             longname: (opts.mainpagetitle) ? opts.mainpagetitle : 'Main Page'
+    //         }]
+    //     ).concat(files), indexUrl);
 
     // set up the lists that we'll use to generate pages
     classes = taffy(members.classes);
